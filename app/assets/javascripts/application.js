@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require moment
 //= require fullcalendar
+//= require fullcalendar/gcal.js
 //= require_tree .
