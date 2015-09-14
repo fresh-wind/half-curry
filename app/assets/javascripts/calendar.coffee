@@ -20,5 +20,6 @@ $(document).ready ->
         events: {
             googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com',
             className: 'gcal-event'
-        }
+        },
+        lang: 'ja'
     })
