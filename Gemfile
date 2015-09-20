@@ -27,6 +27,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 
+# iCalendar形式のデータを扱うカレンダー用ライブラリ
+gem 'icalendar'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
