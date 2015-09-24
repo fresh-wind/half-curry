@@ -11,10 +11,8 @@ json = Net::HTTP.get(uri)
 season_foods_info = JSON.parse(json)
 
 for i in 1..season_foods_info.length do
-    #puts season_foods_info["http://linkdata.org/resource/rdf1s2505i#" + i.to_s].length
-    #puts "\n"
-    puts season_foods_info["http://linkdata.org/resource/rdf1s2505i#" + i.to_s][FOOD_NAME]
-    puts season_foods_info["http://linkdata.org/resource/rdf1s2505i#" + i.to_s][IN_SEASON]
-    puts season_foods_info["http://linkdata.org/resource/rdf1s2505i#" + i.to_s][IN_SEASON_MONTH]
+    puts season_foods_info["http://linkdata.org/resource/rdf1s2505i#" + i.to_s][FOOD_NAME][0]["value"]
+    puts season_foods_info["http://linkdata.org/resource/rdf1s2505i#" + i.to_s][IN_SEASON][0]["value"]
+    puts season_foods_info["http://linkdata.org/resource/rdf1s2505i#" + i.to_s][IN_SEASON_MONTH][0]["value"]
     puts "\n"
 end 
