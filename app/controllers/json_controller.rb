@@ -1,22 +1,15 @@
 class JsonController < ApplicationController
   def index
+    
+    weather = Weather.new()
+    
+    @weather = weather.getWeather
+    
+    render :text => @weather
+    
   end
 
   def show
   end
 
-  def edit
-  end
-
-  def new
-  end
-
-  def create
-  end
-
-  def destroy
-  end
-
-  def update
-  end
 end
