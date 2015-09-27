@@ -1,10 +1,10 @@
+require "fullcalendar_event.rb"
+require 'net/http'
+require 'uri'
+require 'json'
+
 class Weather
     include ActiveModel::Model
-
-    require "fullcalendar_event.rb"
-    require 'net/http'
-    require 'uri'
-    require 'json'
 
     def getWeather
 
@@ -18,7 +18,8 @@ class Weather
             
             event.title = w['telop']
             event.start = w['date']
-            
+            event.color = '#79b74a'
+
             events.push(event)       
         end
         

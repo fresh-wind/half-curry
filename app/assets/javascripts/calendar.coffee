@@ -22,10 +22,9 @@ $(document).ready ->
                 googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com',
                 className: 'gcal-event'
             },
-            # 天気の表示
+            # JSONフォーマットのデータ表示
             {
-                url: '/json/index',
-                color: '#79b74a'
+                url: '/json/index'
             }
         ],
         lang: 'ja'
