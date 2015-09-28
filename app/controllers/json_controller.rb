@@ -3,7 +3,7 @@ class JsonController < ApplicationController
     
     weather = Weather.new()
     
-    @weather = weather.getWeather
+    @weather = weather.get_weather
     
     render :text => @weather
     
