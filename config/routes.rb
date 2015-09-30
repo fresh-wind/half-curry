@@ -3,29 +3,11 @@ Rails.application.routes.draw do
 
   get 'icalendar/show'
 
-  get 'icalendar/edit'
-
-  get 'icalendar/new'
-
-  get 'icalendar/create'
-
-  get 'icalendar/destroy'
-
-  get 'icalendar/update'
-
   get 'json/index'
 
   get 'json/show'
 
-  get 'json/edit'
-
-  get 'json/new'
-
-  get 'json/create'
-
-  get 'json/destroy'
-
-  get 'json/update'
+  
 
   # get 'calendar/index'
 

@@ -12,14 +12,20 @@
 #$(document).ready ->
     #$('#calendar').fullCalendar({})
 
-# 日本の祝日表示（coffeecriptの書き方）
 $(document).ready ->
     $('#calendar').fullCalendar({#
+        # 日本の祝日表示（coffeecriptの書き方）
         #'<YOUR API KEY>',
         googleCalendarApiKey: 'AIzaSyCGtyHc6rdZk4BOKg8TpLuAhJKOnQnD2MI',
-        events: {
-            googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com',
-            className: 'gcal-event'
-        },
+        eventSources: [
+            {
+                googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com',
+                className: 'gcal-event'
+            },
+            # JSONフォーマットのデータ表示
+            {
+                url: '/json/index'
+            }
+        ],
         lang: 'ja'
     })
