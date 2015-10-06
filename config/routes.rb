@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'icalendar/index'
+
+  get 'icalendar/show'
+
+  get 'json/index'
+
+  get 'json/show'
+
+  
+
   # get 'calendar/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
