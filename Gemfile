@@ -30,6 +30,9 @@ gem 'momentjs-rails'
 # iCalendar形式のデータを扱うカレンダー用ライブラリ
 gem 'icalendar'
 
+# MongoDB
+gem 'mongoid', '~> 4.0.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
