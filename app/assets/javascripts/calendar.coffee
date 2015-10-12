@@ -14,17 +14,14 @@
 
 $(document).ready ->
     $('#calendar').fullCalendar({#
-        # 日本の祝日表示（coffeecriptの書き方）
-        #'<YOUR API KEY>',
-        googleCalendarApiKey: 'AIzaSyCGtyHc6rdZk4BOKg8TpLuAhJKOnQnD2MI',
         eventSources: [
             {
-                googleCalendarId: 'ja.japanese#holiday@group.v.calendar.google.com',
-                className: 'gcal-event'
+                # 天気予報
+                url: '/json/index?calendardata=weather'
             },
-            # JSONフォーマットのデータ表示
             {
-                url: '/json/index'
+                # 日本の祝日表示
+                url: '/json/index?calendardata=holidays'
             }
         ],
         lang: 'ja'

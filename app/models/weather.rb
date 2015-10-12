@@ -15,14 +15,14 @@ class Weather
         events = Array.new()
         weathers["forecasts"].each do |w|
             event = FullCalendarEvent.new()
-            
+
             event.title = w["telop"]
             event.start = w["date"]
             event.color = '#79b74a'
 
-            events.push(event)       
+            events.push(event)
         end
-        
+
         return events.to_json()
     end
 
