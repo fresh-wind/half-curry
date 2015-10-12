@@ -30,6 +30,9 @@ gem 'momentjs-rails'
 # iCalendar形式のデータを扱うカレンダー用ライブラリ
 gem 'icalendar'
 
+# Google API クライアントライブラリ
+gem 'google-api-client', '0.9.pre3'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
