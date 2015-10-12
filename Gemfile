@@ -33,6 +33,9 @@ gem 'icalendar'
 # Google API クライアントライブラリ
 gem 'google-api-client', '0.9.pre3'
 
+# MongoDB
+gem 'mongoid', '~> 4.0.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
