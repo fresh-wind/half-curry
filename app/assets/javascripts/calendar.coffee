@@ -22,6 +22,10 @@ $(document).ready ->
             {
                 # 日本の祝日表示
                 url: '/json/index?calendardata=holidays'
+            },
+            {
+                # 旬の食材
+                url: '/json/index?calendardata=foods'
             }
         ],
         lang: 'ja'
