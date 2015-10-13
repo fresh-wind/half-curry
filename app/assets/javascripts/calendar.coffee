@@ -14,6 +14,18 @@
 
 $(document).ready ->
     $('#calendar').fullCalendar({#
+        #defaultView: 'basicWeek',
+        header: {
+           center: 'month,week'
+        },
+        views: {
+            week: {
+                type: 'basicWeek',
+                duration: { days: 31 },
+                buttonText: '31 day',
+                columnFormat: 'D' + " ddd"
+            }
+        },
         eventSources: [
             {
                 # 天気予報
