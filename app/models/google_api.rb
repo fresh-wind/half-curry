@@ -22,7 +22,8 @@ class GoogleApi
         end: item['end']['dateTime'] || item['end']['date'],
         url: item['htmlLink'],
         location: item['location'],
-        description: item['description']
+        description: item['description'],
+        className: 'holidays'
       )
     end
 

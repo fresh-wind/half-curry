@@ -1,3 +1,20 @@
 // Place all the styles related to the calendar controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* 日曜 */
+.fc-sun {
+    color: red;
+    background-color: rgba(255, 127, 127, 0.25);
+}
+/* 土曜 */
+.fc-sat {
+    color: blue;
+    background-color: rgba(127, 127, 255, 0.25);
+}
+/* 祝日 */
+.holidays {
+    color: red;
+    border-color: red;
+    background-color: rgba(255, 127, 127, 0.25);
+}
