@@ -22,7 +22,7 @@ class Food
             event.start = date.year.to_s+"-"+"%02d" % months[0].delete("月")
             #TODO:日付計算は適当なので実用にはしっかり計算する必要あり
             event.end = date.year.to_s+"-"+"%02d" % (months[1].delete("月").to_i+1)
-            event.color = '#FF9999'
+            event.className = 'foods'
     
             events.push(event)
         end
