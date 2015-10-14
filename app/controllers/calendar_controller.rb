@@ -1,5 +1,5 @@
 class CalendarController < ApplicationController
   def index
-    # puts GoogleApi.new().holidays();
+    puts Food.new().get_foods()
   end
 end

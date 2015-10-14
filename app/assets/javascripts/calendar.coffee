@@ -14,6 +14,20 @@
 
 $(document).ready ->
     $('#calendar').fullCalendar({#
+        #defaultView: 'basicWeek',
+        header: {
+           right: 'week,month,today, prev,next'
+        },
+        views: {
+            week: {
+                type: 'basicWeek',
+                duration: { days: 31 },
+                buttonText: '31 days',
+                columnFormat: 'DD ddd'
+            }
+        },
+        defaultDate: moment().startOf('month'),
+        defaultView: 'week',
         eventSources: [
             {
                 # 天気予報
@@ -22,6 +36,11 @@ $(document).ready ->
             {
                 # 日本の祝日表示
                 url: '/json/index?calendardata=holidays'
+            },
+            {
+                # 旬の食材
+                #TODO: 表示件数が多いのでうまい表示方法、間引きができたらコメント解除
+                #url: '/json/index?calendardata=foods'
             }
         ],
         lang: 'ja'
