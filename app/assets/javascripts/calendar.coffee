@@ -39,8 +39,7 @@ $(document).ready ->
             },
             {
                 # 旬の食材
-                #TODO: 表示件数が多いのでうまい表示方法、間引きができたらコメント解除
-                #url: '/json/index?calendardata=foods'
+                url: '/json/index?calendardata=foods'
             }
         ],
         lang: 'ja'
