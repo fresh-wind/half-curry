@@ -30,4 +30,26 @@ class Food
         return events
 
     end 
+
+    def get_foods_array
+
+        uri = URI.parse('http://linkdata.org/api/1/rdf1s2505i/In_season_foods_rdf.json')
+        date = Date.today
+        events = []
+    
+        JSON.parse(Net::HTTP.get(uri)).each do |index, items|
+            months = items[PROPERTY_PATH+"inseason_month"][0]["value"].split("-")
+
+            events.push(
+                title: items[PROPERTY_PATH+"food"][0]["value"],
+                start: date.year.to_s+"-"+"%02d" % months[0].delete("月"),
+                end: date.year.to_s+"-"+"%02d" % (months[1].delete("月").to_i+1)
+            )
+
+        end
+    
+        return events
+
+    end 
+
 end
