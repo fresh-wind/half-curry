@@ -40,6 +40,10 @@ $(document).ready ->
             {
                 # 旬の食材
                 url: '/json/index?calendardata=foods'
+            },
+            {
+                #ユーザーイベント
+                url: '/json/index?calendardata=userevents'
             }
         ],
         lang: 'ja'

@@ -1,0 +1,15 @@
+{
+    "events" : [
+        {
+            "title" : "ハッカソン",
+            "start" : "2015-10-17",
+            "end" : "2015-10-19",
+            "className" : "userevents"
+        },
+        {
+            "title" : "運動会",
+            "start" : "2015-10-10",
+            "className" : "userevents"
+        }
+    ]
+}
