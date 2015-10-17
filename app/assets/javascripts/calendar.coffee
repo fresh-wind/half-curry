@@ -47,4 +47,5 @@ $(document).ready ->
             }
         ],
         lang: 'ja'
-    })
+        height: 430
+})

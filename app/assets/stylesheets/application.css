@@ -14,3 +14,17 @@
  *= require_tree .
  *= require_self
  */
+
+.header {
+  background-color: #fff2cc;
+}
+
+.btn_area {
+  background-color: #fff2cc;
+  height: 430px;
+}
+
+.msg_area  {
+  background-color: #fff2cc;
+  height: 70px;
+}
