@@ -36,9 +36,10 @@ $(document).ready ->
                 url: '/json/index?calendardata=userevents'
             }
         ],
-        lang: 'ja',
+        lang: 'ja'
+        height: 430
         # fullCalendarのイベントがすべて完了してからコールされる処理
         eventAfterAllRender: ->
             # ローディング表示を非表示に。
             $("#loading").hide()
-    })
+})
