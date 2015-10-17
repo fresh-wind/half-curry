@@ -2,21 +2,11 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-# デフォルト表示（javascriptの書き方）
-#$(document).ready(function() {
-    #$('#calendar').fullCalendar({
-    #})
-#});
-
-# デフォルト表示（coffeecriptの書き方）
-#$(document).ready ->
-    #$('#calendar').fullCalendar({})
-
 $(document).ready ->
     $('#calendar').fullCalendar({#
-        #defaultView: 'basicWeek',
         header: {
-           right: 'week,month,today, prev,next'
+           #right: 'week,month,today, prev,next'
+           right: 'prev,next'
         },
         views: {
             week: {
@@ -42,5 +32,9 @@ $(document).ready ->
                 url: '/json/index?calendardata=foods'
             }
         ],
-        lang: 'ja'
+        lang: 'ja',
+        # fullCalendarのイベントがすべて完了してからコールされる処理
+        eventAfterAllRender: ->
+            # ローディング表示を非表示に。
+            $("#loading").hide()
     })
