@@ -27,7 +27,6 @@ class GoogleApi
       )
     end
 
-    # return events.to_json()
     return events
   rescue => e
     return e
