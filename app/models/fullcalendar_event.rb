@@ -9,6 +9,7 @@ class FullCalendarEvent
     :color,
     :backgroundColor,
     :borderColor,
-    :textColor
+    :textColor,
+    :img
    
 end
