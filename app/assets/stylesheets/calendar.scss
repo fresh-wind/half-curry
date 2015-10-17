@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* ロゴ */
+h1 img {
+    width: auto;
+    max-height: 120px;
+}
+
 /* 日曜 */
 .fc-sun {
     color: red;
