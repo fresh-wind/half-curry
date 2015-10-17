@@ -18,3 +18,4 @@
 //= require fullcalendar/gcal.js
 //= require fullcalendar/lang-all.js
 //= require_tree .
+//= require twitter/bootstrap
