@@ -5,4 +5,5 @@
 $(document).ready ->
     $('#button_food').on('click', ->
         $('.foods').toggle();
+        height: 430
     );
