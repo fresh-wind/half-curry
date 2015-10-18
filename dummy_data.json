@@ -1,14 +1,27 @@
 {
     "events" : [
         {
-            "title" : "ハッカソン",
-            "start" : "2015-10-17",
-            "end" : "2015-10-19",
+            "title" : "カップ麺100円セール",
+            "start" : "2015-10-04",
+            "end" : "2015-10-11",
+            "className" : "userevents"
+        },
+        {
+            "title" : "ハロウィン内装",
+            "start" : "2015-10-15",
+            "end" : "2015-11-01",
             "className" : "userevents"
         },
         {
             "title" : "運動会",
             "start" : "2015-10-10",
+            "end" : "2015-10-12",
+            "className" : "userevents"
+        },
+        {
+            "title" : "アウトドア特集",
+            "start" : "2015-10-25",
+            "end" : "2015-11-01",
             "className" : "userevents"
         }
     ]
