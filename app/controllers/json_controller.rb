@@ -10,6 +10,7 @@ class JsonController < ApplicationController
       when 'holidays' then render :json => GoogleApi.new().holidays()
       when 'foods' then render :json => Food.new().get_foods()
       when 'userevents' then render :json => Userevent.new().get_events()
+      when 'recipe' then render :json => Food_and_recipe.new().three_food_data_creater
       else
       end
 

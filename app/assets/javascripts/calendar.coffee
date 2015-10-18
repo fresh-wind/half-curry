@@ -50,3 +50,22 @@ $(document).ready ->
             # ローディング表示を非表示に。
             $("#loading").hide()
 })
+    $('#message_area').append('<div><p><a href="http://recipe.rakuten.co.jp/category/12-105/" target="brabk" alt="きのこを使用したレシピ一覧">
+                <b>きのこ</b>を使用したレシピ一覧</a></p>
+            <p><a href="http://recipe.rakuten.co.jp/category/12-448/" target="brabk" alt="かぼちゃを使用したレシピ一覧">
+                <b>かぼちゃ</b>を使用したレシピ一覧</a></p>
+            <p><a href="http://recipe.rakuten.co.jp/category/11-70-55/" target="brabk" alt="鮭を使用したレシピ一覧">
+                <b>鮭</b>を使用したレシピ一覧</a></p></div>')
+
+#    $('#message_area').append('<div>'+ /json/index?calendardata=recipe +'</div>')
+#    $.get(
+#        "/json/index?calendardata=recipe",
+#        null,
+#        (data) => 
+#            $('#message_area').append('<div>testeteetete</div>')
+#            $("#message_area").append("----- データ取得結果 -----").append("<br/>");
+#            for (i in data) {
+#                $("#message_area").append(i + ": " + data[i]).append("<br/>");
+#            }
+#            $("#message_area").append(data);
+#    );
