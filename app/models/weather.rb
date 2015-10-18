@@ -19,6 +19,7 @@ class Weather
             event.title = w["telop"]
             event.start = w["date"]
             event.color = '#79b74a'
+            event.img = w["image"]["url"]
 
             events.push(event)
         end
