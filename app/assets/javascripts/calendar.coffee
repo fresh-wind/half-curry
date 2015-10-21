@@ -53,8 +53,6 @@ $(document).ready ->
     $.get('/json/index?calendardata=recipe', null, (recipes) ->
         #console.log recipes
         for recipe in recipes
-            #url = recipe['url']
-            #name = recipe['name']
             $('#message_area').append('<div><p><a href=' + recipe['url'] + ' target="brabk" alt=' + recipe['name'] + 'を使用したレシピ一覧>
             <b>' + recipe['name'] + '</b>を使用したレシピ一覧</a></p></div>')
     )
